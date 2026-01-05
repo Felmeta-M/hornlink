@@ -9,14 +9,14 @@ export function Hero() {
   return (
     <section className="relative py-20 md:py-32 overflow-hidden">
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-slate-900 dark:to-slate-800" />
+      <div className="absolute inset-0 bg-muted/20" />
 
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         {/* Left section hero */}
         <div className="max-w-3xl lg:max-w-none">
-          <div className="inline-block mb-4 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 rounded-full">
-            <span className="text-sm font-medium text-blue-700 dark:text-blue-300">
+          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 rounded-full">
+            <span className="text-sm font-medium text-primary">
               Driving Digital Transformation
             </span>
           </div>
@@ -33,7 +33,7 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4">
             <Link href="/services">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button size="lg">
                 Explore Services <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
@@ -48,16 +48,16 @@ export function Hero() {
         {/* Right section hero */}
         <div className="hidden lg:block relative perspective-1000">
           {/* Decorative blobs */}
-          <div className="absolute -top-12 -right-12 w-72 h-72 bg-blue-400/30 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute -bottom-12 -left-12 w-72 h-72 bg-cyan-400/30 rounded-full blur-3xl animate-pulse delay-1000" />
+          <div className="absolute -top-12 -right-12 w-72 h-72 bg-primary/30 rounded-full blur-3xl animate-pulse" />
+          <div className="absolute -bottom-12 -left-12 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse delay-1000" />
 
           {/* Main Dashboard Card */}
-          <Card className="relative z-10 border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm shadow-2xl animate-in fade-in zoom-in duration-1000">
-            <CardHeader className="border-b border-slate-100 dark:border-slate-800 pb-4">
+          <Card className="relative z-10 bg-card/80 backdrop-blur-sm shadow-2xl animate-in fade-in zoom-in duration-1000">
+            <CardHeader className="border-b pb-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <div className="p-2 bg-blue-100 dark:bg-blue-900/50 rounded-lg">
-                    <BarChart3 className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <div className="p-2 bg-primary/10 rounded-lg">
+                    <BarChart3 className="w-5 h-5 text-primary" />
                   </div>
                   <div>
                     <CardTitle className="text-base">
@@ -84,8 +84,8 @@ export function Hero() {
                   </span>
                   <span className="font-medium text-green-600">+124%</span>
                 </div>
-                <div className="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                  <div className="h-full w-[85%] bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-[width_1s_ease-out]" />
+                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                  <div className="h-full w-[85%] bg-primary rounded-full animate-[width_1s_ease-out]" />
                 </div>
               </div>
 
@@ -95,8 +95,8 @@ export function Hero() {
                   <span className="text-muted-foreground">Tasks Processed</span>
                   <span className="font-medium">8,432</span>
                 </div>
-                <div className="h-2 bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden">
-                  <div className="h-full w-[65%] bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full animate-[width_1s_ease-out]" />
+                <div className="h-2 bg-muted rounded-full overflow-hidden">
+                  <div className="h-full w-[65%] bg-primary rounded-full animate-[width_1s_ease-out]" />
                 </div>
               </div>
 

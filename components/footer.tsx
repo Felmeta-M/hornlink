@@ -1,45 +1,58 @@
-import Link from "next/link"
-import { Mail, Linkedin, Twitter } from "lucide-react"
+import Link from "next/link";
+import { Mail, Linkedin, Twitter } from "lucide-react";
 
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 text-slate-50 py-16">
+    <footer className="bg-muted text-foreground py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-400 to-cyan-400 rounded-lg" />
+              <div className="w-8 h-8 bg-primary rounded-lg" />
               <span className="font-bold text-lg">Hornlink</span>
             </div>
-            <p className="text-slate-400 text-sm">
-              Driving digital transformation through innovation, automation, and intelligence.
+            <p className="text-muted-foreground text-sm">
+              Driving digital transformation through innovation, automation, and
+              intelligence.
             </p>
           </div>
 
           {/* Services */}
           <div>
             <h3 className="font-bold mb-4">Services</h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/services/training-mentorship" className="hover:text-white transition">
+                <Link
+                  href="/services/training-mentorship"
+                  className="hover:text-foreground transition"
+                >
                   Training & Mentorship
                 </Link>
               </li>
               <li>
-                <Link href="/services/ai-automation" className="hover:text-white transition">
+                <Link
+                  href="/services/ai-automation"
+                  className="hover:text-foreground transition"
+                >
                   AI & Automation
                 </Link>
               </li>
               <li>
-                <Link href="/services/web-development" className="hover:text-white transition">
+                <Link
+                  href="/services/web-development"
+                  className="hover:text-foreground transition"
+                >
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="/services/business-systems" className="hover:text-white transition">
+                <Link
+                  href="/services/business-systems"
+                  className="hover:text-foreground transition"
+                >
                   Business Systems
                 </Link>
               </li>
@@ -49,24 +62,30 @@ export function Footer() {
           {/* Resources */}
           <div>
             <h3 className="font-bold mb-4">Resources</h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/portfolio" className="hover:text-white transition">
+                <Link
+                  href="/portfolio"
+                  className="hover:text-foreground transition"
+                >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link href="/blog" className="hover:text-white transition">
+                <Link href="/blog" className="hover:text-foreground transition">
                   Blog
                 </Link>
               </li>
               <li>
-                <Link href="/testimonials" className="hover:text-white transition">
+                <Link
+                  href="/testimonials"
+                  className="hover:text-foreground transition"
+                >
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="hover:text-white transition">
+                <Link href="/faq" className="hover:text-foreground transition">
                   FAQ
                 </Link>
               </li>
@@ -76,9 +95,12 @@ export function Footer() {
           {/* Company */}
           <div>
             <h3 className="font-bold mb-4">Company</h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-muted-foreground">
               <li>
-                <Link href="/about" className="hover:text-white transition">
+                <Link
+                  href="/about"
+                  className="hover:text-foreground transition"
+                >
                   About Us
                 </Link>
               </li>
@@ -141,5 +163,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
